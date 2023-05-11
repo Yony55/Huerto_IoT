@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Panel De Monitoreo</title>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Chempox" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+        integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"
+        integrity="sha512-zO8oeHCxetPn1Hd9PdDleg5Tw1bAaP0YmNvPY8CwcRyUk7d7/+nyElmFrB6f7vg4f7Fv4sui1mcep8RIEShczg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU=" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <form>
+        <h1>Panel De Monitoreo</h1>
+        <div class="topnav">
+            <a class="active" href="index.html">Planta 1</a>
+            <a href="planta_2.html">Planta 2</a>
+            <a href="planta_3.html">Planta 3</a>
+            <c href="#clock">
+                <div id="reloj" class="reloj">00 : 00 : 00</div></a>
+        </div>
+        <br />
+        <div class="row">
+            <div class="column">
+                <h2>Humedad En Planta: <h2 id="hum1">algo</h2>
+                </h2>
+                <canvas id="myChart" width"400" height="150"></canvas>
+            </div>
+            <div class="column">
+                <h2>Humedad En Ambiente: <h2 id="huma1">algo</h2></h2>
+                <canvas id="myChart2" width"400" height="150"></canvas>
+            </div>
+            <div class="column">
+                <h2>Intensidad Luminosa: <h2 id="intensidad1">algo</h2> </h2>
+                <canvas id="myChart3" width"400" height="150"></canvas>
+            </div>
+            <div class="column">
+                <h2>Temperatura: <h2 id="temperatura1">algo</h2></h2>
+                <canvas id="myChart4" width"400" height="150"></canvas>
+            </div>
+        </div>
+    </form>
+    <div id="particles-js"></div>
+</body>
+
+
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="main3.js"></script>
+<script src="sensores_planta3.js"></script>
+
+</html>
